@@ -29,29 +29,15 @@
   <![endif]--> 
   <div class="container">
     <div class="row">
-        <header><div class="home-link" data-ng-click="goHome()">Infinite Scroll</div></header>
-        <!--
-        <div class="row">
-          <div class="u-full-width"> 
-            <a href="https://itunes.apple.com/us/album/inspired-by-bach-cello-suites/id518668394?uo=10&app=itunes&at=1001lmX"><img src="images/yo-yo-banner.png"></a>
-          </div>    
-        </div>
-        -->
+        <header>
+          <div class="u-pull-left">
+            <a href="http://woodylewis.net">
+              <i class="fa fa-chevron-circle-left fa-1x wls-icon"></i>
+            </a>
+          </div>
+          <div class="home-link" data-ng-click="goHome()">Infinite Scroll</div></header>
     </div>
   </div>
-  <!--
-    <div class="row">
-      <div class="twelve columns">
-        <div class="wls-button-panel">
-          <a ui-sref="#"><i class="fa fa-building-o fa-2x wls-icon"></i></a>
-          <a ui-sref="#"><i class="fa fa-bar-chart fa-2x wls-icon"></i></a>
-          <a ui-sref="#"><i class="fa fa-book fa-2x wls-icon"></i></a>
-          <a ui-sref="#"><i class="fa fa-lightbulb-o fa-2x wls-icon"></i></a>
-        </div>
-      </div> 
-    </div>
-  </div>
-  -->
   <div ng-controller="MainCtrl as ctl" ng-cloak>
     <div ui-view="state"></div>
   </div>
