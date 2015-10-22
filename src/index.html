@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="infinitescroll" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="infinitescroll" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="infinitescroll" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="infinitescroll" class="no-js"> <!--<![endif]-->
+<head>
+  <link href='https://fonts.googleapis.com/css?family=Cinzel' rel='stylesheet' type='text/css'>
+  <meta charset="utf-8">
+  <base href="/src/">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Gotham Lane</title>
+  <meta name="description" content="Narrative Network">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/override.css">
+  <link rel="stylesheet" href="css/app.css">
+  <link href="font-awesome-4.4.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.6/angular.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
+  <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ngInfiniteScroll/1.2.1/ng-infinite-scroll.min.js"></script>
+</head>
+<body ng-controller="appCtrl">
+  <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]--> 
+  <div class="container">
+    <div class="row">
+        <header><div class="home-link" data-ng-click="goHome()">Gotham Lane</div></header>
+        <!--
+        <div class="row">
+          <div class="u-full-width"> 
+            <a href="https://itunes.apple.com/us/album/inspired-by-bach-cello-suites/id518668394?uo=10&app=itunes&at=1001lmX"><img src="images/yo-yo-banner.png"></a>
+          </div>    
+        </div>
+        -->
+    </div>
+  </div>
+  <!--
+    <div class="row">
+      <div class="twelve columns">
+        <div class="wls-button-panel">
+          <a ui-sref="#"><i class="fa fa-building-o fa-2x wls-icon"></i></a>
+          <a ui-sref="#"><i class="fa fa-bar-chart fa-2x wls-icon"></i></a>
+          <a ui-sref="#"><i class="fa fa-book fa-2x wls-icon"></i></a>
+          <a ui-sref="#"><i class="fa fa-lightbulb-o fa-2x wls-icon"></i></a>
+        </div>
+      </div> 
+    </div>
+  </div>
+  -->
+  <div ng-controller="MainCtrl as ctl" ng-cloak>
+    <div ui-view="state"></div>
+  </div>
+
+  <script src="js/app.js"></script>
+  <script src="js/controllers/mainCtrl.js"></script>
+  <script src="js/services/narrationEngine.js"></script>
+  <footer>
+  </footer>
+</body>
+</html>

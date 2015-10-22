@@ -1,0 +1,14 @@
+<div class="container">
+	<div infinite-scroll='ctl.ne.nextNarrations()' infinite-scroll-disabled='busy' infinite-scroll-distance='1'>
+	  <div ng-repeat="narration in ctl.ne.narrations">
+	  	<div class="row">
+	      <div class="twelve-columns">
+	        <div class="wls-row" ng-bind="narration.title" data-ng-click="ctl.fetchNarration(narration._id)"></div>
+	      </div>
+      	</div>
+	  </div>
+	  <div ng-show='ne.busy'>
+        <i class="fa fa-cloud-download fa-lg"></i>
+	  </div>
+	</div>
+</div>
