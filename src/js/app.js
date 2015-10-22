@@ -4,13 +4,7 @@ angular.module('infinitescroll', [
 	'ui.router',
 	'infinitescroll.mainCtrl'
 ])
-.config(['$stateProvider', '$locationProvider', function($stateProvider, $locationProvider) {
-  $locationProvider.html5Mode({
-    enabled: true,
-    requireBase: false
-  })
-  .hashPrefix('!');
-
+.config(['$stateProvider', '$locationProvider', function($stateProvider) {
   $stateProvider
     .state('main', {
       url: "/main",
